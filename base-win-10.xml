@@ -1,6 +1,7 @@
 <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
-  <name>game</name>
+  <name>base-win10</name>
   <uuid>97b4ed8f-e7b9-4501-b688-80afe94184f7</uuid>
+  <description>Base image for windows 10 vm</description>
   <metadata>
     <libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0">
       <libosinfo:os id="http://microsoft.com/win/10"/>
@@ -12,7 +13,7 @@
   <os>
     <type arch='x86_64' machine='pc-i440fx-4.2'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/ovmf/x64/OVMF_CODE.fd</loader>
-    <nvram>/var/lib/libvirt/qemu/nvram/win10_VARS.fd</nvram>
+    <nvram>/var/lib/libvirt/qemu/nvram/base-win10_VARS.fd</nvram>
     <boot dev='hd'/>
     <bootmenu enable='no'/>
   </os>
