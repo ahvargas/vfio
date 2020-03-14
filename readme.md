@@ -3,7 +3,7 @@
 
 ## Grub
 
-Edit `/boot/grub/grub.cfg` 
+Edit `/etc/default/gru` 
 
 Update configuration:
 
